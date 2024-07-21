@@ -1,8 +1,6 @@
 const URL = `https://mate-academy.github.io/react_phone-catalog/_new/products.json`;
 
 window.onload = async () => {
-  console.log('page is fully loaded');
-
   const products = await getData();
   renderProducts(products);
 };
@@ -18,7 +16,7 @@ async function getData() {
 function renderProducts(products) {
   const productsList = document.querySelector('.catalog-grid');
 
-  products.forEach(product => {
+  products.forEach((product) => {
     const listItem = document.createElement('li');
     listItem.className = 'catalog-grid__cell';
     listItem.innerHTML = `
