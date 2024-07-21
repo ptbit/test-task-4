@@ -5,3 +5,142 @@
 body {
   background-color: rgb(161, 161, 247);
 }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 16px;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-grid__cell {
+  background: #fff;
+  border: 1px solid #e2e6e9;
+  box-shadow: 0 2px 15px 0 #0000000d;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  max-width: calc(25% - 10px);
+  min-width: 229px;
+  padding: 32px;
+}
+
+.catalog-item__top {
+  height: 200px;
+  margin-bottom: 24px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.catalog-item__img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.catalog-item--title {
+  color: #313237;
+  font-family: Mont, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 42px;
+  line-height: 21px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.catalog-item--price-row {
+  border-bottom: 1px solid #e2e6e9;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 7px;
+}
+
+.catalog-item--new-price {
+  color: #313237;
+  font-family: Mont, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 140%;
+}
+
+.catalog-item--old-price {
+  align-self: center;
+  color: #89939a;
+  font-family: Mont, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration-line: line-through;
+}
+
+.catalog-item--params {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.params-item {
+  display: flex;
+  font-family: Mont, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: space-between;
+  line-height: 15px;
+}
+
+.catalog-item--buttons {
+  display: flex;
+}
+
+button {
+  padding: 0;
+}
+.catalog-item {
+  cursor: pointer;
+}
+.catalog-item--cart-btn-empty {
+  align-items: center;
+  background: #313237;
+  border: none;
+  color: #fff;
+  display: flex;
+  flex: 1 1;
+  font-family: Mont, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  line-height: 21px;
+  margin-right: 8px;
+}
+
+.catalog-item--fav-btn {
+  background-image: url('./img/images/svg/fav.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #b4bdc3;
+  box-sizing: border-box;
+  color: #0000;
+  height: 40px;
+  width: 40px;
+}
+
+.catalog-item--fav-btn:hover {
+  border: 1px solid #313237;
+}
+
+.catalog-item--cart-btn:hover {
+  border: 1px solid;
+}
