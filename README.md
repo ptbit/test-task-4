@@ -6,3 +6,5 @@ Request URL:
 https://mate-academy.github.io/react_phone-catalog/_new/products.json
 Request method: GET
 Server returns encoded JSON string in base64
+
+deployed link: url: https://ptbit.github.io/test-task-4/
